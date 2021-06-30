@@ -1,9 +1,7 @@
 # Intro to Networking
 
 ### Instructor: Christian Nally
-
 <br>
-
 Devices are often hooked up to a nearby router that connects to the internet. Different servers are connected to client interfaces and establish a connection. Web servers are connected to physical servers to deliver messages from huge databases.
 
 **Examples of networks:**
@@ -14,24 +12,17 @@ Devices are often hooked up to a nearby router that connects to the internet. Di
 
 ---
 
-<br>
-
 ### TCP - Transport Control Protocol
 
 Much like a mail carrier system, **TCP** is like the internet's package forwarding system. Servers send multiple packets to clients which arrive at different times and can take different routes. These messages are then re-assembled at the final destination to form a complete message.
-
 <br>
-
 FTP - File Transfer Protocol <br>
 HTTP - Hypertext Transfer Protocol <br>
 DNS - Domain Name Search
-
 <br>
-
 Internet browsers attempt to convert website names into IP addresses using a DNS server. Once it has this number, it connects to the server with that address. If the request is accepted, then the server responds with websites composed of HTML, CSS, and JS. If using the same machine, using the localhost address with 127.0.01 allows developers to test client/server functions within one computer.
 
 ---
-<br>
 
 ### Server/Client Communication
 <br>
@@ -155,12 +146,12 @@ client.on('end', () => {
 
 ---
 
-### URLs
+### URL: Uniform Resource Locator
 <br>
 
 ![URL](https://miro.medium.com/max/1400/1*O2QB8zBNMs7SN44AhGdPrg.png)
 
-URLs are made up of several parts:
+URLs are made up of [several parts](https://medium.com/@joseph.pyram/9-parts-of-a-url-that-you-should-know-89fea8e11713):
 
 1. Protocol
 
@@ -177,7 +168,6 @@ URLs are made up of several parts:
 7. Query
 
 8. Parameters
-
 
 9. Fragment
 
