@@ -1,7 +1,8 @@
 # Intro to Networking
 
-### Instructor: Christian Nally
+## Instructor: Christian Nally
 <br>
+
 Devices are often hooked up to a nearby router that connects to the internet. Different servers are connected to client interfaces and establish a connection. Web servers are connected to physical servers to deliver messages from huge databases.
 
 **Examples of networks:**
@@ -15,17 +16,21 @@ Devices are often hooked up to a nearby router that connects to the internet. Di
 ### TCP - Transport Control Protocol
 
 Much like a mail carrier system, **TCP** is like the internet's package forwarding system. Servers send multiple packets to clients which arrive at different times and can take different routes. These messages are then re-assembled at the final destination to form a complete message.
+
 <br>
+
 FTP - File Transfer Protocol <br>
 HTTP - Hypertext Transfer Protocol <br>
 DNS - Domain Name Search
+
 <br>
+
 Internet browsers attempt to convert website names into IP addresses using a DNS server. Once it has this number, it connects to the server with that address. If the request is accepted, then the server responds with websites composed of HTML, CSS, and JS. If using the same machine, using the localhost address with 127.0.01 allows developers to test client/server functions within one computer.
 
 ---
 
 ### Server/Client Communication
-<br>
+
 We can build a small chat system using the Node package `net`. The `server.on()` and `server.listen()` functions are run asynchronously and can be put into the file in any order. We are scheduling tasks on an event loop.
 
 The port number we use is connected to the server. When the client is connected, the server's callbacks are called. When the client receives the server's messages, the client's callbacks are called.
@@ -113,6 +118,7 @@ server.on('connection', (client) => {
   });
 });
 ```
+<br>
 
 8. Create a function to handle broadcasting messages to all connected clients
 
